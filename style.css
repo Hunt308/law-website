@@ -1,0 +1,1242 @@
+/* global */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noticia+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+
+/* Nav-bar */
+
+
+
+.main-nav{
+    display: flex;
+    padding: 1.5rem;
+    background-color: #fff;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    justify-content: center;
+    padding-top: 2.4rem;
+}
+
+.main-nav h1{
+    font-family: 'Noticia Text', serif;
+    font-size: 22px;
+    color: #00305B;
+    margin-right: 15rem;
+}
+
+
+.main-nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-size: 13px;
+}
+
+.main-nav li {
+    margin-left: 2rem;
+}
+
+.main-nav a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.main-nav ul a:hover{
+    color: #0F4C85;
+}
+
+
+
+
+
+/* Showcase */
+
+#showcase {
+    background: url('images/showcase.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 115vh;
+}
+
+#showcase .side {
+    background-color: #00305BA6;
+    width: 40vw;
+    height: 115vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+#showcase h2{
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+#showcase p{
+    font-size: 18px;
+    margin-left: 13.5rem;
+    line-height: 1.5;
+}
+
+#showcase h2, p{
+    margin-left: 9.5rem;
+}
+
+#showcase .line{
+    margin-right: 2rem;
+}
+
+#showcase .side div{
+    font-weight: lighter;
+}
+
+#showcase h2, p, .line{
+    animation-name: firstanimation;
+    opacity: 0;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+
+}
+
+
+@keyframes firstanimation {
+    0%   {opacity: 0;}
+    100%  {opacity: 1;}
+    
+}
+
+/*  Areas section */
+
+#areas .color{
+    width: 40vw;
+    height: 105vh;
+    background-color: #EAF4F6;
+    float: left;
+
+}
+
+#areas h2{
+    font-size: 42px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 6.5rem;
+    padding-left: 18rem;
+}
+
+#areas span{
+    font-weight: lighter;
+}
+
+#areas .items{
+    float: right;
+    display: grid;
+    grid-gap: 60px;
+    grid-template-columns: repeat(2, 1fr);
+    width: 40vw;
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+    padding: 7rem 10rem 2.5rem 0.5rem;
+}
+
+.thing p:nth-of-type(1){
+    color: #00305B;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 12px;    
+}
+
+.thing{
+    text-align: center;
+}
+
+.items div:nth-of-type(5){
+    margin-bottom: 6rem;
+}
+
+.items div:nth-of-type(6){
+    margin-bottom: 6rem;
+}
+
+
+i{
+    margin-left: 155px;
+    margin-bottom: 25px;
+    color: #0F4C85;
+    
+}
+
+
+
+#areas h3{
+    font-size: 20px;
+    color: #00305B;
+}
+
+#areas p{
+    font-size: 13px;
+    color: #0F4C85;
+}
+
+.item-1{
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+/* About section */
+
+#about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    background-color: #00305B;
+    display: inline-block;
+    
+}
+
+#about h2{
+    padding: 8rem 0rem 4rem 0rem;
+    font-size: 50px;
+}
+
+#about p{
+    font-size: 13px;
+    line-height: 2.2rem;
+    margin: 3.3rem 15rem;
+ 
+}
+
+
+
+
+#about :nth-child(4){
+    margin-bottom: 7rem;
+
+}
+
+/*image section */ 
+
+.img{
+    background: url('images/law.jpg');
+    height: 100vh;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+/* People section */ 
+
+
+#humans{
+    background-color: #EAF4F6;
+    padding: 8rem;
+
+}
+
+.title{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #00305B;
+    font-size: 42px;
+    font-weight:normal;
+    text-transform: uppercase;
+}
+
+.people{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-right: 5rem;
+}
+
+
+.people p{
+    line-height: 1.5;
+}
+
+
+
+.person img{
+    width: 200px;
+    height: 200px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+
+
+.border{
+    padding-bottom: 15px;
+    border-bottom: 1px solid #0F4C85;
+    color: #0F4C85;
+}
+
+.name{
+    font-size: 20px;
+    color:  #00305B;
+    text-transform: uppercase;
+}
+
+.text{
+    color: #0F4C85;
+
+}
+
+.one{
+    margin-top: 15px;
+}
+
+.two{
+    padding-bottom: 1.9rem;
+}
+
+.lawyer-1, .lawyer-2, .lawyer-3{
+    margin-left: 9rem;
+}
+
+
+
+.way {
+    position: relative;
+    width: 50%;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 9.5%;
+    bottom: 0;
+    left: 84%;
+    right: 0;
+    height: 200px;
+    width: 200px;
+    opacity: 0;
+    transition: 1s ease;
+    background: url(images/overlay.jpg);
+  }
+  
+  .way:hover .overlay {
+    opacity: 1;
+  }
+
+
+  
+  
+  .overlay-2 {
+    position: absolute;
+    top: 9.5%;
+    bottom: 0;
+    left: 84%;
+    right: 0;
+    height: 200px;
+    width: 200px;
+    opacity: 0;
+    transition: 1s ease;
+    background: url(images/overlay-2.jpg);
+  }
+  
+  .way:hover .overlay-2 {
+    opacity: 1;
+  }
+
+    
+.overlay-3 {
+    position: absolute;
+    top: 9.5%;
+    bottom: 0;
+    left: 84%;
+    right: 0;
+    height: 200px;
+    width: 200px;
+    opacity: 0;
+    transition: 1s ease;
+    background: url(images/overlay-3.jpg);
+}
+  
+  .way:hover .overlay-3 {
+    opacity: 1;
+  }
+  
+
+
+
+/* Contact Section */
+
+#contact{
+    background: url(images/contact.jpg);
+    height: 100vh;
+    position: relative;
+
+}
+
+.layer {
+    background-color:rgba(0, 48, 91, 0.7) ;
+    position: absolute;
+    width: 100%;
+    height:100vh;
+}
+
+.layer, #contact{
+    padding-top: 0.4rem;
+}
+
+#contact .left-content{
+    float: left;
+    width: 40vw;
+    height:97vh;
+    color: #fff;
+    font-size: 42px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #00305b66;
+    text-transform: uppercase;
+    position: relative;
+
+}
+
+.left-content p:nth-of-type(1){
+    margin-top: 5rem;
+}
+
+
+
+#contact .right{
+    color: #fff;
+    font-size: 20px;
+    position: relative;
+    left: 2%;
+}
+
+
+.right .info{
+    margin-top: 5rem;
+    line-height: 1.4;
+}
+
+.right .info span{
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+
+.right .info .address{
+    text-transform: uppercase;
+}
+
+
+.right .info .important-info{
+    margin-top: 2.5rem;
+}
+
+.right .info a{
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+
+
+.right .writing-section{
+    display: flex;
+    margin-top: 15px;
+}
+
+.right .fill-out{
+    display:flex;
+    flex-direction:column;
+    width: 40%;
+}
+                                                      /* Widths are more powerful than margins */
+
+.right .fill-out label,input{
+    margin-top: 8px;
+}
+
+
+.right .fill-out input{
+    padding: 5px 0px;
+
+
+}
+
+.right .message label{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 3px;
+}
+
+.right .message{
+    margin-left: 1.2rem;
+    margin-top: 8px;
+}
+
+
+.right .btn{
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    background: #0F4C85;
+    padding: 5px  290px;
+    width: 50%;
+    border: 1px solid #fff;
+    opacity: 0.9;
+    font-size: 16px;
+}
+
+.right .btn:hover{
+    background: #00305B;
+    transition: 0.5s;
+
+}
+
+
+textarea{
+    padding: 6.6rem 3.3rem;
+}
+
+/* Footer */
+
+footer{
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0F4C85;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Queries */
+
+
+
+
+@media(max-width:1350px){
+    .main-nav h1{
+        font-family: 'Noticia Text', serif;
+        font-size: 20px;
+        color: #00305B;
+        margin-right: 5rem;
+    }
+    
+    
+    .main-nav ul{
+        display: flex;
+        align-items: center;
+        list-style: none;
+        font-size: 12px;
+    }
+    
+    .main-nav li {
+        margin-left: 1.8rem;
+    }
+
+
+    #showcase p{
+        font-size: 22px;
+    }
+
+    #showcase h2, p, .line{
+        margin-left: 6.5rem;
+        margin-right: 5.5rem;
+    }
+
+    #showcase h2{
+        margin-left: 14.5rem;
+    }
+    
+    #showcase .side {
+        width: 50vw;
+
+    }
+
+    #areas .color{
+        width: 50vw;
+    
+    }
+
+
+    #areas .color{
+        width: 100vw;
+        height:  30vh;
+        background-color: #EAF4F6;
+        float: none;
+    
+    }
+
+
+    #areas h2{
+        font-size: 42px;
+        display: flex;
+        flex-direction: row;
+        padding-top: 5.5rem;
+        padding-left: 12rem;
+    }
+
+
+    #areas span{
+        padding: 0px 20px;
+
+    }
+
+
+    #areas .items{
+        grid-gap: 40px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100vw;
+        height: 150vh;
+        padding: 2rem 2rem 0.5rem 30rem;
+    }
+
+    i{
+        margin-left: 50px;
+        margin-bottom: 30px;
+        color: #0F4C85;
+        
+    }
+    
+    .thing p:nth-of-type(1){
+        color: #00305B;
+        font-weight: bold;
+        margin-bottom: 7px;
+        font-size: 7px; 
+           
+    }
+    
+    .thing{
+        text-align: center;
+        margin-right: 10rem;
+        margin-top: 1.5rem;
+    }
+
+    
+    
+    .items div:nth-of-type(5){
+        margin-bottom: 3rem;
+    }
+    
+    .items div:nth-of-type(6){
+        margin-bottom: 3rem;
+    }
+
+
+    .lawyer-1, .lawyer-2, .lawyer-3{
+        margin-left: 2rem;
+    }
+
+    .overlay, .overlay-2, .overlay-3 {
+        left: 20%;
+    }
+
+
+    #contact{
+        height: 150vh;
+    
+    }
+    
+    .layer {
+        height:150vh;
+    }
+
+    .right .btn{
+        text-decoration: none;
+        color: #fff;
+        text-align: center;
+        background: #0F4C85;
+        padding: 6px  100px;
+        width: 25%;
+        float: right;
+        margin-right: 5rem;
+
+    }
+
+    .layer, #contact{
+        height: 110vh;
+    }
+
+    textarea{
+        padding: 6.6rem 2.3rem;
+    }
+    
+
+
+}
+
+@media(max-width:768px){
+    #showcase, .img,.people,#areas .color
+    #contact .left-content,
+    #areas .items {
+        background-attachment: scroll;
+        grid-template-columns:1fr;
+        display: flex;
+        flex-direction: column;
+        float: none;
+
+    }
+
+    .main-nav h1{
+        margin-right: 0.3rem;
+    }
+    
+    
+    .main-nav ul{
+        font-size: 8px;
+    }
+    
+    .main-nav li {
+        margin-left: 1rem;
+    }
+
+    #about h2{
+        font-size: 30px;
+        padding: 12rem 0rem 3rem 0rem;
+        
+    }
+
+    
+
+    #about p{
+        font-size: 14px;
+        line-height: 2.5rem;
+        margin: 0.5rem 7rem;
+
+    }
+
+    .img{
+        height: 290px;
+        width: 100vw;   
+
+    }
+
+    #showcase .side{
+        width: 60vw;
+    }
+
+
+
+    #showcase h2{
+        font-size: 36px;
+        margin-bottom: 15px;
+        margin-right: 7rem;
+    }
+    
+    #showcase p{
+        font-size: 18px;
+        margin-left: 10rem;
+
+    }
+    
+    #showcase h2, p{
+        margin-left: 12rem;
+    }
+    
+    #areas .color{
+        width: 100vw;
+        height:  30vh;
+        background-color: #EAF4F6;
+        float: none;
+    
+    }
+
+
+    #areas h2{
+        font-size: 42px;
+        display: flex;
+        flex-direction: row;
+        padding-top: 5.5rem;
+        padding-left: 12rem;
+    }
+
+
+    #areas span{
+        padding: 0px 20px;
+
+    }
+
+
+    #areas .items{
+        grid-gap: 30px;
+        grid-template-columns: 1fr;
+        width: 100vw;
+        height: 150vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 4rem 20rem 1.5rem 0.2rem;
+    }
+
+    i{
+        margin-left: 90px;
+        margin-bottom: 30px;
+        color: #0F4C85;
+        text-align: center;
+        
+    }
+    
+    .thing p:nth-of-type(1){
+        color: #00305B;
+        font-weight: bold;
+        margin-bottom: 7px;
+        font-size: 7px; 
+           
+    }
+    
+    .thing{
+        text-align: center;
+        margin-right: 10rem;
+        margin-top: 1.5rem;
+    }
+
+    
+    
+    .items div:nth-of-type(5){
+        margin-bottom: 3rem;
+    }
+    
+    .items div:nth-of-type(6){
+        margin-bottom: 3rem;
+    }
+
+
+    #contact{
+        height: 155vh;
+    }
+
+
+    .layer {
+        height: 155vh;
+    }
+
+
+
+    .person p{
+        width: 100%;
+        position: relative;
+        right: 45%;
+    
+    }
+
+
+    
+    #contact .left-content{
+        float: none;
+        width: 98vw;
+        height:20vh;
+        font-size: 30px;
+
+
+    }
+    .left-content p:nth-of-type(1){
+        margin-top: 1rem;
+    }
+
+    
+
+    
+
+    .left-content p{
+        margin-right: 8rem;
+    }
+
+
+
+
+    .right .message{
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .right .message label{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+        font-size: 25px;
+    }
+
+    
+    .right .writing-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+
+
+    .right .info{
+        margin-top: 2rem;
+        line-height: 1.3;
+        text-align: center;
+        margin-right: 9rem;
+        font-size: 25px;
+    }
+    
+
+    .additional{
+        text-align: center;
+    }
+
+
+    .right .fill-out label,input{
+        margin-top: 20px;
+        text-align: center;
+
+    }
+
+    .right .fill-out label{
+        margin-left: 4rem;
+        font-size: 25px;
+    }
+
+
+    .right .fill-out{
+        display:flex;
+        flex-direction:column;
+        width: 90%;
+    }
+
+    textarea{
+        width: 80%;
+        height:50px;
+        margin-right: 25px;
+        text-align: center;
+    }
+
+
+    .right .btn{
+        text-decoration: none;
+        color: #fff;
+        text-align: center;
+        background: #0F4C85;
+        padding: 12px  100px;
+        width: 60%;
+        display: block;
+        margin-right: 4rem;
+
+    }
+
+
+    .person img{
+        width: 300px;
+        height: 300px;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .overlay {
+        top: 2.5%;
+        left: 22%;
+        height: 300px;
+        width: 300px;
+        opacity: 0;
+        transition: 1s ease;
+        background: url(images/overlay\(300\).jpg);
+    }
+
+    .overlay-2 {
+        top: 2.5%;
+        left: 22%;
+        height: 300px;
+        width: 300px;
+        opacity: 0;
+        transition: 1s ease;
+        background: url(images/overlay-2-300.jpg);
+    }
+
+    .overlay-3 {
+        top: 2.5%;
+        left: 22%;
+        height: 300px;
+        width: 300px;
+        opacity: 0;
+        transition: 1s ease;
+        background: url(images/overlay-3-300.jpg);
+    }
+
+
+    
+    .person{
+        text-align: center;
+    }
+
+    .layer, #contact{
+        height: 200vh;
+    }
+
+
+
+    
+}
+
+@media(max-width: 600px){
+
+    .main-nav h1{
+        font-family: 'Noticia Text', serif;
+        font-size: 14px;
+        color: #00305B;
+        margin-right: 2rem;
+    }
+    
+    
+    .main-nav ul{
+        display: flex;
+        align-items: center;
+        list-style: none;
+        font-size: 7px;
+    }
+    
+    .main-nav li {
+        margin-left: 0.5rem;
+    }
+
+    .thing{
+        position: relative;
+    }
+    i{
+        margin-left: 120px;
+        margin-bottom: 20px;
+        color: #0F4C85;
+        position: absolute;
+        top: 0%;
+        
+    }
+
+    #areas h2{
+        font-size: 30px;
+        padding-top: 6.5rem;
+        padding-left: 5rem;
+    
+
+    }
+
+    #showcase p{
+        margin-left: 2rem;
+
+    }
+    
+    #showcase h2{
+        margin-left: 4rem;
+    }
+
+
+    .layer, #contact{
+        height: 230vh;
+    }
+
+
+
+    .important-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .important-info p{
+        width: 70%;
+        font-size: 19px;  
+
+    }
+
+
+    .additonal a{
+        width: 70%;
+        font-size: 19px;  
+        margin-left: 9rem;
+
+
+    }
+
+    .additonal p{
+        width: 70%;
+        font-size: 19px;  
+        margin-left: 12rem;
+
+
+    }
+
+    
+
+
+
+    textarea{
+        padding: 8.6rem 2.3rem;
+    }
+
+
+    .right .btn{
+        text-decoration: none;
+        color: #fff;
+        text-align: center;
+        background: #0F4C85;
+        padding: 12px  100px;
+        width: 50%;
+        display: block;
+        margin-right: 1.5rem;
+
+    }
+
+
+         
+
+
+
+}
+
+
+@media(max-width: 460px){
+
+    .main-nav h1{
+        font-family: 'Noticia Text', serif;
+        font-size: 8px;
+        color: #00305B;
+        margin-right: 3rem;
+    }
+    
+    
+    .main-nav ul{
+        display: flex;
+        align-items: center;
+        list-style: none;
+        font-size: 5px;
+    }
+    
+    .main-nav li {
+        margin-left: 0.5rem;
+    }
+
+    textarea{
+        padding: 4.6rem 1.3rem;
+    }
+
+    .person img{
+        width: 100px;
+        height: 100px;
+        margin-top: 1.1rem;
+        margin-bottom: 1.1rem;
+    }
+
+
+    .overlay {
+        top: 2.5%;
+        left: 22%;
+        height: 100px;
+        width: 100px;
+        opacity: 0;
+        transition: 1s ease;
+        background: url(images/overlay-100.jpg);
+    }
+
+    .overlay-2 {
+        top: 2.5%;
+        left: 22%;
+        height: 100px;
+        width: 100px;
+        opacity: 0;
+        transition: 1s ease;
+        background: url(images/overlay-2-100.jpg);
+    }
+
+    .overlay-3 {
+        top: 2.5%;
+        left: 22%;
+        height: 100px;
+        width: 100px;
+        opacity: 0;
+        transition: 1s ease;
+        background: url(images/overlay-3-100.jpg);
+    }
+
+
+    
+    .person p{
+        width: 100%;
+        position: relative;
+        right: 200%;
+    
+    }
+    
+   
+
+}
+
+
+@media(max-width: 390px){
+   
+    
+    .person p{
+        width: 100%;
+        position: relative;
+        right: 350%;
+    
+    }
+
+    #showcase h2, 
+    #showcase p, 
+    #showcase .line{
+        margin-left: 5.5rem;
+        margin-right: 5.5rem;
+    }
+    
+   
+
+}
